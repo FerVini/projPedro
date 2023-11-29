@@ -108,7 +108,7 @@ header {
     background-color: var(--branco-pagina);
     position: absolute;
     top: 20%;
-    left: 0;
+    left: -5px;
     width: 350px;
     padding: 60px 25px 35px 25px;
     border: 2px solid var(--preto-conteudo);
@@ -170,16 +170,17 @@ header {
     color: var(--vermelho-detalhes);
 }
 
-.imagem {
+.container-imagem {
     position: relative;
+    margin-left: 50px;
 }
 
 .imagem img {
     width: 80px;
 }
 
-.imagem::after,
-.imagem::before {
+.container-imagem::after,
+.container-imagem::before {
     content: '';
     position: absolute;
     width: 300px;
@@ -187,12 +188,12 @@ header {
     background-color: var(--vermelho-detalhes);
 }
 
-.imagem::after {
+.container-imagem::after {
     top: 45%;
     right: -350px;
 }
 
-.imagem::before {
+.container-imagem::before {
     top: 45%;
     left: -350px;
 }
@@ -344,7 +345,7 @@ section.imagens-links {
 }
 
 .whey-item, .pre-treino-item, .creatina-item, .acessorios-item {
-    background-size: 100%;
+    background-size: cover;
     background-position: top center;
     filter: grayscale(100%);
     transition: 0.5s ease-in-out;
@@ -352,7 +353,6 @@ section.imagens-links {
 
 .whey-item:hover, .pre-treino-item:hover, .creatina-item:hover, .acessorios-item:hover {
     filter: grayscale(0%);
-    background-size: 110%;
     background-position: top center;
 }
 
@@ -403,7 +403,7 @@ section.imagens-links {
 
 .container-produtos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 100px;
     margin: 80px auto;
 }
@@ -411,7 +411,7 @@ section.imagens-links {
 .card-produto {
     margin: 0 auto;
     display: flex;
-    width: 50%;
+    width: 300px;
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
@@ -550,4 +550,55 @@ footer {
     font-weight: 700;
     text-decoration: none;
     font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+
+    .header-menu{
+        padding: 0 20px;
+    }
+
+    .container-imagem::after,
+    .container-imagem::before {
+        width: 200px;
+    }
+
+    .container-imagem::after {
+        right: -220px;
+    }
+
+    .container-imagem::before {
+        left: -220px;
+    }
+
+    .container-menu-hamburger {
+        left: 1%;
+    }
+
+    .container-carrinho { 
+        right: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    
+    .container-imagem::after,
+    .container-imagem::before {
+        width: 150px;
+    }
+
+    .container-imagem::after {
+        right: -170px;
+    }
+
+    .container-imagem::before {
+        left: -170px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container-imagem::after,
+    .container-imagem::before {
+        display: none;
+    }
 }
