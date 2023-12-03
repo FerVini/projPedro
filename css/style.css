@@ -554,6 +554,122 @@ footer {
     font-size: 20px;
 }
 
+/* SEÇÃO ESCOLHA DE SABOR */
+
+.main-pagina-sabores {
+    padding-top: 120px;
+    margin-bottom: 25px;
+}
+
+.mensagem-promocao {
+    padding: 10px;
+    background: var(--vermelho-detalhes);
+    display: block;
+    text-align: center;
+    font-family: 'Homenaje', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--branco-pagina);
+}
+
+.main-pagina-sabores .secao-produto {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.secao-produto .container-imagem-produto {
+    height: 300px;
+}
+
+.secao-produto .container-imagem-produto img {
+    height: 100%;
+}
+
+.secao-produto .container-informacoes-produto {
+    height: 300px;
+    max-width: 25%;
+}
+
+.container-informacoes-produto .nome-produto {
+    font-family: 'Homenaje', sans-serif;
+    font-size: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--preto-conteudo);
+}
+
+.secao-sabores-informacao {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.secao-sabores-informacao .titulo-container{
+    font-style: italic;    
+}
+
+.formulario-opcoes-sabor input {
+    display: none;
+}
+
+.formulario-opcoes-sabor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.formulario-opcoes-sabor label {
+    border: 3px solid var(--preto-conteudo);
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.formulario-opcoes-sabor label:hover {
+    border: 3px solid var(--vermelho-detalhes);
+    color: var(--vermelho-detalhes);
+}
+
+.formulario-opcoes-sabor input[type="radio"]:checked + label {
+    background-color: var(--vermelho-detalhes);
+    color: #fff;
+}
+
+.btn-adicionar-ao-carrinho {
+    background: none;
+    width: 100%;
+    border: none;
+    margin: 20px 0; 
+    text-align: center;
+    font-size: 20px;
+    color: var(--vermelho-detalhes);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-comprar-agora {
+    width: 60%;
+    margin: 0px auto;
+    padding: 15px 30px;
+    font-family: 'Homenaje', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--vermelho-detalhes);
+    border: none;
+    color: var(--branco-pagina);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 @media (max-width: 1000px) {
 
     .header-menu{

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link do font Awesome -->
+    <script src="https://kit.fontawesome.com/f41f43b525.js" crossorigin="anonymous"></script>
+    
+    <!-- Link do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>Projeto Pedro</title>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Links JS -->
+    <script src="../js/menu-function.js" defer></script>
+    <script src="../js/carrinho-function.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="centraliza-conteudo header-menu">
+            <button id="menu-hamburger">
+                <span class="linha"></span>
+            </button>
+
+            <div class="container-menu-hamburger fechado">
+
+                <button class="fechar-menu">X</button>
+                
+                <span class="msg-bem-vindo">
+                        Olá seja bem vindo, <span id="nome-cliente">...</span>
+                </span>
+
+                <h3 class="titulo-menu">
+                    Produtos
+                </h3>
+                
+                <nav class="nav-menu">
+                    <a href="whey-protein.html" class="nav-item">Whey Protein</a>
+                    <a href="pre-treinos.html" class="nav-item">Pré Treinos</a>
+                    <a href="creatinas.html" class="nav-item">Creatinas</a>
+                    <a href="acessorios.html" class="nav-item">Acessórios</a>
+                </nav>
+            </div>
+            
+            <div class="container-imagem">
+                <a href="../index.html" class="imagem">
+                    <img src="../imgs/logo-header.png" alt="logo da página">
+                </a>
+            </div>
+            
+            <div class="menu-direita-header">
+                <button id="minha-conta-botao">
+                    <a href="cadastro.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </button>
+                
+                <button id="meu-carrinho-botao">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+
+                <div class="container-carrinho fechado">
+
+                    <button class="fechar-carrinho">X</button>
+
+                    <h3 class="titulo-carrinho">
+                        Meu Carrinho
+                    </h3>
+
+                    <div class="conteudo-carrinho">
+                        <div class="carrinho-card">
+                            <button class="remover-item">
+                                X
+                            </button>
+                            <div class="img-produto-carrinho">
+                                <img src="https://placehold.co/100x100" alt="">
+                            </div>
+                            <div class="info-produto-carrinho">
+                                <span class="nome-produto-carrinho">
+                                    Pré Treino X-Treme 300g
+                                </span>
+                                <span class="valor-produto-carrinho">
+                                    R$ 130,50
+                                </span>
+                            </div>
+                        </div>
+                        <div class="carrinho-card">
+                            <button class="remover-item">
+                                X
+                            </button>
+                            <div class="img-produto-carrinho">
+                                <img src="https://placehold.co/100x100" alt="">
+                            </div>
+                            <div class="info-produto-carrinho">
+                                <span class="nome-produto-carriho">
+                                    Pré Treino X-Treme 300g
+                                </span>
+                                <span class="valor-produto-carrinho">
+                                    R$ 130,50
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="valor">Subtotal
+                        <span id="valor-total">
+                            R$ 261,00
+                        </span>
+                    </span>
+
+                    <button id="botao-finalizar-compra">
+                        Finalizar Compra
+                    </button>
+                </div>
+            </div>
+        </div> <!-- centraliza-conteudo header-menu -->
+    </header>
+
+    <main class="main-pagina-sabores">
+        <span class="mensagem-promocao">
+            COMPRE ACIMA DE R$ 400,00 E GANHE UMA CAMISA
+        </span>
+
+        <section class="secao-produto centraliza-conteudo">
+            <div class="container-imagem-produto">
+                <img src="../imgs/produto-whey1.png">
+            </div>
+
+            <div class="container-informacoes-produto">
+                <h3 class="nome-produto">
+                    BLACK WHEY 100% NATURAL ISOLATE 900G-IRONFORCE
+                </h3>
+
+                <div class="secao-sabores-informacao">
+                    <span class="titulo-container">Sabor:</span>
+                    
+                    <form class="formulario-opcoes-sabor">
+                        <input type="radio" id="radio-chocolate" name="sabores" value="sabor-chocolate">
+                        <label for="radio-chocolate">CHOCOLATE</label>
+                        
+                        <input type="radio" id="radio-baunilha" name="sabores" value="sabor-baunilha">
+                        <label for="radio-baunilha">BAUNILHA</label>
+                        
+                        <input type="radio" id="radio-morango" name="sabores" value="sabor-morango">
+                        <label for="radio-morango">MORANGO</label>
+                        
+                        <input type="radio" id="radio-cookies" name="sabores" value="sabor-cookies">
+                        <label for="radio-cookies">COOKIES</label>
+
+                    </form>
+
+                    <button class="btn-adicionar-ao-carrinho">
+                        Adicionar ao carrinho
+                    </button>
+    
+                    <button class="btn-comprar-agora">
+                        COMPRAR AGORA
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer >
+        <div class="centraliza-conteudo rodape-pagina">
+            <div class="container-redes-sociais">
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
