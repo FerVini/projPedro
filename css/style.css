@@ -497,6 +497,7 @@ footer {
 
 .formulario-cadastro {
     width: 60%;
+    min-width: 600px;
     padding: 50px 70px;
     display: flex;
     flex-direction: column;
@@ -504,6 +505,7 @@ footer {
     margin: 50px auto;
     border: 2px solid var(--preto-conteudo);
     border-radius: 5px;
+
 }
 
 .input-formulario-cadastro {
